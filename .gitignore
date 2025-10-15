@@ -1,8 +1,7 @@
+# .gitignore file
 # Virtual Environment
 venv/
-
 # Python cache
 __pycache__/
-
-# Environment variables file (we'll use this later)
+# Environment variables file
 .env
