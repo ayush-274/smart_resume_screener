@@ -52,10 +52,25 @@ The application is a monolithic Flask server with a modular service for LLM inte
 
 **1. For Structured Data Extraction:**
 ```
-<-- Copy and paste the prompt from your extract_structured_data function here -->
+Based on the following resume text, extract the key skills, total years of professional experience, and the highest level of education.
+
+Format the output as a JSON object with the following keys: 'skills', 'experience_years', 'education'.
+
+- 'skills' should be a list of strings.
+- 'experience_years' should be an integer.
+- 'education' should be a string describing the highest degree and field of study.
+
+Resume Text:
 ```
 
 **2. For Scoring and Justification:**
 ```
-<-- Copy and paste the prompt from your score_resume_against_jd function here -->
+Compare the following resume with this job description and provide a fit rating and justification.
+The fit rating should be an integer between 1 and 10, where 1 is a very poor fit and 10 is an excellent fit.
+The justification should be a brief, 2-3 sentence explanation of why you gave that rating, highlighting key strengths or weaknesses.
+
+Format the output as a single JSON object with two keys: 'score' and 'justification'.
+
+Resume Text:
+Job Description:
 ```
